@@ -1,8 +1,8 @@
 // @ts-nocheck
 import { readFileSync } from "fs";
-let path = new URL("./input.txt", import.meta.url);
-let buffer = readFileSync(path);
-let input = buffer
+const path = new URL("./input.txt", import.meta.url);
+const buffer = readFileSync(path);
+const input = buffer
   .toString()
   .split(/\n/)
   .map((card) => card.split(":"))
